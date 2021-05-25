@@ -19,8 +19,12 @@ Note: If you already have a personal website, sessions 2 and/or 3 may still be o
 - Get set up with R/RStudio/Git and GitHub (if not already)
 - Build a basic landing page website with `postcards`
 - Create a multi-paged paged website with `distill`
-- Begin to develop an aesthetic for your personal brand
+- Begin to develop an aesthetic for your "'personal brand' ^[Do we hate the concept of 'personal brand'? I think there is some value in thinking about how we make it easier for the world to understand us...but there is so much grossness with it too...]
 - Learn some basic ways to edit the look and feel of a site with CSS
 - Set up and post a first blog post
 - Develop and polish professional content for your website and blog
 - Connect to additional U of T resources that can help you develop your professional digital presence (TBC)
+
+```{r, fig.align = "center", include = FALSE}
+knitr::include_graphics("images/brentrambo.gif")
+```
