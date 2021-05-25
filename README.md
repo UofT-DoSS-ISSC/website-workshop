@@ -1,0 +1,1 @@
+Instructions and resources for a series of workshops about building a website in Distill for undergraduate statistics students taking part in the the Independent Summer Statistics Community in the Department of Statistical Sciences at the University of Toronto, Canada.

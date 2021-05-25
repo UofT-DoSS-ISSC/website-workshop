@@ -1,0 +1,45 @@
+# (PART) Prerequisites {-}
+
+# What you need to do before the first session {#prereqs}
+
+## Decide if this is the right way of making a website for you
+
+In order to make the most of this series, you should think about what the purpose for your personal website is going to be. 
+
+- Is it to have a basic hub for your professional links? (A bit like the 'linktree' links you might see on Instagram.)
+- Is it to share your technical portfolio and/or demonstrate your communication skills with simple blogs? Especially good if R is one of the main languages you'll be using. Also works with Python with the [`reticulate` package](https://rstudio.github.io/reticulate/).
+
+If yes, to the above, this workshop series using `distill` is probably perfect for you. If you want a more complicated and customizable site checkout [`blogdown`](https://bookdown.org/yihui/blogdown/) (still using an R package) or [Bootstrap](https://www.w3schools.com/howto/howto_website_bootstrap.asp) (HTML/CSS) or if you need to support e-commerce, you might just want to go find which YouTuber you like has a Squarespace sponsorship this week...
+
+## Technical tasks
+
+To be able to engage fully with this series of workshops, you will need to have completed the steps in the Installation part of
+<https://happygitwithr.com/>. This a great a resource. I also STRONGLY recommend that you try to follow the instructions in Chapter 10 so you can easily set up your new project and connect it to GitHub. 
+
+-   <input type="checkbox" unchecked></input> Register a GitHub account
+-   <input type="checkbox" unchecked></input> Get GitHub for education
+    <https://education.github.com/> so you can have free private
+    repositories
+-   <input type="checkbox" unchecked></input> [Install or upgrade R and
+    RStudio on your local machine](https://happygitwithr.com/install-r-rstudio.html)
+-   <input type="checkbox" unchecked></input> [Install Git](https://happygitwithr.com/install-git.html)
+-   <input type="checkbox" unchecked></input> [Introduce yourself to Git](https://happygitwithr.com/hello-git.html)
+-   <input type="checkbox" unchecked></input> [Cache your credentials](https://happygitwithr.com/credential-caching.html)
+
+For the easiest experience with website building and updating, you want to be able to push to a GitHub repo from either the Git pane in RStudio or using the terminal (which you can also access from RStudion, tab next to the console pane).
+
+### What is GitHub and why do you want it?
+
+We're suggesting that if you haven't already, you get yourself setup with GitHub as a key component of your portfolio building strategy, regardless of your plans to make a website with this series or otherwise. It will supercharge your version control and your ability to collaborate with others AND provides a FREE way to host a website.
+
+Jenny Bryan has a great introduction in her [Happy Git with R](https://happygitwithr.com), so I'll let her explain the rest:
+
+Git is a version control system. Its original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word on steroids.
+Git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analytical projects, which often consist of data, figures, reports, and, yes, source code.
+A solo data analyst, working on a single computer, will benefit from adopting version control. But not nearly enough to justify the pain of installation and workflow upheaval. There are much easier ways to get versioned back ups of your files, if that’s all you’re worried about.
+In my opinion, for new users, the pros of Git only outweigh the cons when you factor in the overhead of communicating and collaborating with other people. Who among us does not need to do that? Your life is much easier if this is baked into your workflow, as opposed to being a separate process that you dread or neglect.” - Jenny Bryan, Happy Git with R, Section 1.1: Why Git?  https://happygitwithr.com/big-picture.html
+There is also lots of great practical professional advice in here, too, like “Pick a username you will be comfortable revealing to your future boss.” Save gamerangel420 for Reddit. (The first example I thought of I had to change...it actually was someone’s Reddit username)
+Work through Jenny Bryan’s awesome ‘Happy Git with R’
+Check out the DoSS Toolkit lesson “Git outta here”
+Sign up for GitHub Education Student Developer Pack (access to hundreds of dollars worth of tools and training AND a GitHub pro account while you’re a student)
+

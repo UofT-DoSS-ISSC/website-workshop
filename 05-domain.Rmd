@@ -1,0 +1,22 @@
+# (APPENDIX) Appendix {-}
+
+# Buy a domain name (optional) {#domain}
+
+You __do not have to buy anything__ to build and host a professional personal website as a student. BUT, if you've always wanted to own www.firstnamelastname.com, here are some instructions. Note, if you're not sure what a domain name is there are heaps of explainer articles online, just search "what is a domain name". You don't really need to know too much.
+
+### Some caveats before we continue
+
+- I'd recommend doing some of your own further research to make sure this is actually the best approach for you and what you actually want or need.
+- This isn't legal or financial advice. Duh. 
+
+## Setting up a custom domain
+
+It can take a while (like, a day or so) to update the redirection between your GitHub page and your domain, so be prepared to be patient! 
+
+https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/
+
+## But what if you don't buy a domain name?
+
+If you don't want to buy a domain name, your personal website's address will appear as: `your-github-username.github.io`. Even more reason to choose a good username! See more in the [prerequisite secion](#prereqs).
+
+For example, I made a simple landing page for the ISSC at https://uoft-doss-issc.github.io/.

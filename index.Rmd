@@ -1,0 +1,26 @@
+--- 
+title: "ISSC: Building a personal website workshop series"
+author: "Liza Bolton"
+date: "Last updated `r Sys.Date()`"
+site: bookdown::bookdown_site
+description: "Instructions and resources for a series of workshops about building a website in Distill."
+---
+
+__Unless told otherwise, assume everything in this guide is as yet incomplete!__
+
+# Introduction
+
+There are many, many ways to make a website these days. This workshop series aims to help you make a personal website using the [`distill` package](https://rstudio.github.io/distill/).This is just ONE way that is used by a lots of folks in statistics and that leverages your existing R and R Markdown skills. It is reasonably beginner friendly and creates a professional looking website.
+
+Note: If you already have a personal website, sessions 2 and/or 3 may still be of interest to you. You can attend as many or as few of these sessions as you would like.
+
+## What we're going to do during the workshop series
+
+- Get set up with R/RStudio/Git and GitHub (if not already)
+- Build a basic landing page website with `postcards`
+- Create a multi-paged paged website with `distill`
+- Begin to develop an aesthetic for your personal brand
+- Learn some basic ways to edit the look and feel of a site with CSS
+- Set up and post a first blog post
+- Develop and polish professional content for your website and blog
+- Connect to additional U of T resources that can help you develop your professional digital presence (TBC)
