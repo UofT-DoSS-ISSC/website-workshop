@@ -1,0 +1,375 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={ISSC: Building a personal website workshop series},
+  pdfauthor={Liza Bolton},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{ISSC: Building a personal website workshop series}
+\author{Liza Bolton}
+\date{Last updated 2021-05-25}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\textbf{Unless told otherwise, assume everything in this guide is as yet incomplete!}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+There are many, many ways to make a website these days. This workshop series aims to help you make a personal website using the \href{https://rstudio.github.io/distill/}{\texttt{distill} package}.This is just ONE way that is used by a lots of folks in statistics and that leverages your existing R and R Markdown skills. It is reasonably beginner friendly and creates a professional looking website.
+
+Note: If you already have a personal website, sessions 2 and/or 3 may still be of interest to you. You can attend as many or as few of these sessions as you would like.
+
+\hypertarget{what-were-going-to-do-during-the-workshop-series}{%
+\subsection{What we're going to do during the workshop series}\label{what-were-going-to-do-during-the-workshop-series}}
+
+\begin{itemize}
+\tightlist
+\item
+  Get set up with R/RStudio/Git and GitHub (if not already)
+\item
+  Build a basic landing page website with \texttt{postcards}
+\item
+  Create a multi-paged paged website with \texttt{distill}
+\item
+  Begin to develop an aesthetic for your personal brand
+\item
+  Learn some basic ways to edit the look and feel of a site with CSS
+\item
+  Set up and post a first blog post
+\item
+  Develop and polish professional content for your website and blog
+\item
+  Connect to additional U of T resources that can help you develop your professional digital presence (TBC)
+\end{itemize}
+
+\hypertarget{part-prerequisites}{%
+\part{Prerequisites}\label{part-prerequisites}}
+
+\hypertarget{prereqs}{%
+\section{What you need to do before the first session}\label{prereqs}}
+
+\hypertarget{decide-if-this-is-the-right-way-of-making-a-website-for-you}{%
+\subsection{Decide if this is the right way of making a website for you}\label{decide-if-this-is-the-right-way-of-making-a-website-for-you}}
+
+In order to make the most of this series, you should think about what the purpose for your personal website is going to be.
+
+\begin{itemize}
+\tightlist
+\item
+  Is it to have a basic hub for your professional links? (A bit like the `linktree' links you might see on Instagram.)
+\item
+  Is it to share your technical portfolio and/or demonstrate your communication skills with simple blogs? Especially good if R is one of the main languages you'll be using. Also works with Python with the \href{https://rstudio.github.io/reticulate/}{\texttt{reticulate} package}.
+\end{itemize}
+
+If yes, to the above, this workshop series using \texttt{distill} is probably perfect for you. If you want a more complicated and customizable site checkout \href{https://bookdown.org/yihui/blogdown/}{\texttt{blogdown}} (still using an R package) or \href{https://www.w3schools.com/howto/howto_website_bootstrap.asp}{Bootstrap} (HTML/CSS) or if you need to support e-commerce, you might just want to go find which YouTuber you like has a Squarespace sponsorship this week\ldots{}
+
+\hypertarget{technical-tasks}{%
+\subsection{Technical tasks}\label{technical-tasks}}
+
+To be able to engage fully with this series of workshops, you will need to have completed the steps in the Installation part of
+\url{https://happygitwithr.com/}. This a great a resource. I also STRONGLY recommend that you try to follow the instructions in Chapter 10 so you can easily set up your new project and connect it to GitHub.
+
+\begin{itemize}
+\tightlist
+\item
+  Register a GitHub account
+\item
+  Get GitHub for education
+  \url{https://education.github.com/} so you can have free private
+  repositories
+\item
+  \href{https://happygitwithr.com/install-r-rstudio.html}{Install or upgrade R and
+  RStudio on your local machine}
+\item
+  \href{https://happygitwithr.com/install-git.html}{Install Git}
+\item
+  \href{https://happygitwithr.com/hello-git.html}{Introduce yourself to Git}
+\item
+  \href{https://happygitwithr.com/credential-caching.html}{Cache your credentials}
+\end{itemize}
+
+For the easiest experience with website building and updating, you want to be able to push to a GitHub repo from either the Git pane in RStudio or using the terminal (which you can also access from RStudion, tab next to the console pane).
+
+\hypertarget{what-is-github-and-why-do-you-want-it}{%
+\subsubsection{What is GitHub and why do you want it?}\label{what-is-github-and-why-do-you-want-it}}
+
+We're suggesting that if you haven't already, you get yourself setup with GitHub as a key component of your portfolio building strategy, regardless of your plans to make a website with this series or otherwise. It will supercharge your version control and your ability to collaborate with others AND provides a FREE way to host a website.
+
+Jenny Bryan has a great introduction in her \href{https://happygitwithr.com}{Happy Git with R}, so I'll let her explain the rest:
+
+Git is a version control system. Its original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files -- called a repository -- in a sane, highly structured way. If you have no idea what I'm talking about, think of it as the ``Track Changes'' features from Microsoft Word on steroids.
+Git has been re-purposed by the data science community. In addition to using it for source code, we use it to manage the motley collection of files that make up typical data analytical projects, which often consist of data, figures, reports, and, yes, source code.
+A solo data analyst, working on a single computer, will benefit from adopting version control. But not nearly enough to justify the pain of installation and workflow upheaval. There are much easier ways to get versioned back ups of your files, if that's all you're worried about.
+In my opinion, for new users, the pros of Git only outweigh the cons when you factor in the overhead of communicating and collaborating with other people. Who among us does not need to do that? Your life is much easier if this is baked into your workflow, as opposed to being a separate process that you dread or neglect.'' - Jenny Bryan, Happy Git with R, Section 1.1: Why Git? \url{https://happygitwithr.com/big-picture.html}
+There is also lots of great practical professional advice in here, too, like ``Pick a username you will be comfortable revealing to your future boss.'' Save gamerangel420 for Reddit. (The first example I thought of I had to change\ldots it actually was someone's Reddit username)
+Work through Jenny Bryan's awesome `Happy Git with R'
+Check out the DoSS Toolkit lesson ``Git outta here''
+Sign up for GitHub Education Student Developer Pack (access to hundreds of dollars worth of tools and training AND a GitHub pro account while you're a student)
+
+\hypertarget{part-workshop-sessions}{%
+\part{Workshop sessions}\label{part-workshop-sessions}}
+
+\hypertarget{session-1-build-a-simple-website-with-distill}{%
+\section{Session 1: Build a simple website with Distill}\label{session-1-build-a-simple-website-with-distill}}
+
+\hypertarget{s1pre}{%
+\subsection{To do before the workshop}\label{s1pre}}
+
+\begin{itemize}
+\item
+  Complete all the steps in the \protect\hyperlink{prereqs}{prerequisites} section.
+\item
+  Decide if you want to buy a \protect\hyperlink{domain}{domain name (see appendix)}. Buying a domain name is \textbf{totally optional}, and you don't have to decide now. But, if you know you want to, you might as well get set up now.
+\item
+  Decide what links to external things you want to share on your website. Have them easily accessible to copy and paste. \emph{GitHub? LinkedIn? Twitter?}
+\item
+  Choose a profile picture for your website. A headshot with a simple background is best. If you don't have one/don't want to show a photo, you may want to find some other form of an avatar or placeholder picture. Have the PNG or JPEG easily available to copy to the file you'll need.
+\item
+  \href{https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf}{Download the R Markdown cheat sheet} and pay special attention to the `\textbf{Pandoc's Markdown}' section on the lefthand side of the second page.
+\item
+  Install the below R packages. I.e., copy and paste the below code into your R console and run it. If you're not sure what this means or how to do it, come talk to use during a TidyTuesday and Talk session (Tuesdays, from 2:00 to 3:00 p.m. ET, on Zoom, see the \href{https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/_layouts/15/Events.aspx?ListGuid=0679786c-8a7e-483c-9ec5-3845602a70e5}{Events list})
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{\textquotesingle{}postcards\textquotesingle{}}\NormalTok{)}
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{\textquotesingle{}distill\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{thank-you-rohan}{%
+\subsubsection{Thank you, Rohan!}\label{thank-you-rohan}}
+
+Major credit to Prof.~Rohan Alexander for his teaching notes about making a website. You can find them at: \url{https://www.tellingstorieswithdata.com/interactive-communication.html\#making-a-website}
+
+His personal website is also made with distill, \url{https://rohanalexander.com/}.
+
+\hypertarget{workshop-instructions}{%
+\subsection{Workshop instructions}\label{workshop-instructions}}
+
+\hypertarget{landing-page-with-postcards}{%
+\subsubsection{\texorpdfstring{Landing page with \texttt{postcards}}{Landing page with postcards}}\label{landing-page-with-postcards}}
+
+Let's start with the most basic thing we can do, create a landing page with a brief bio and some key links. It is a bit like a business card for the digital age.
+
+This page can later become the home page of your website, or you might find you want to do something more customized.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Make sure you have \protect\hyperlink{s1pre}{installed packages you needed to.}
+\item
+  Create a new R project using the postcard template:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    `File -\textgreater{} New Project -\textgreater{} New Directory -\textgreater{} Postcards Website.'.
+  \item
+    Choose a sensible location for this project to live on your computer.
+  \item
+    Pick a theme, I'd recommend trying `trestles' for now, but you can see all the different `looks' \href{https://github.com/seankross/postcards}{here (scroll down)}.
+  \item
+    Choose `Open in new session', just to be safe.
+  \end{enumerate}
+\item
+  Run this code in your console: \texttt{file.create(\textquotesingle{}.nojekyll\textquotesingle{})}. It tell GitHub something important about how \emph{not} to build the site.
+\item
+  Navigate to the \textbf{Build} tab in the environment pane (usually the top right pane in your R Studio if you haven't customized the layout) and click \textbf{Build Website}. This should create a pop-up that allows you to preview what the basic template builds.
+\item
+\end{enumerate}
+
+\hypertarget{example}{%
+\paragraph{Example}\label{example}}
+
+I made the ISSC a landing page. You can view it at \url{https://uoft-doss-issc.github.io/} and the code is available on \href{https://github.com/UofT-DoSS-ISSC/UofT-DoSS-ISSC.github.io}{GitHub}.
+
+\hypertarget{multipage-site}{%
+\subsubsection{Multipage site}\label{multipage-site}}
+
+\hypertarget{other-tips}{%
+\subsection{Other tips}\label{other-tips}}
+
+\begin{itemize}
+\tightlist
+\item
+  Add \texttt{.DS\_Store} to your \texttt{.gitignore} file (if you're on a Mac)
+\end{itemize}
+
+\hypertarget{setting-up-a-custom-domain}{%
+\subsection{Setting up a custom domain}\label{setting-up-a-custom-domain}}
+
+It can take a while (like, a day or so) to update the redirection between your GitHub page and your domain, so be prepared to be patient!
+
+These instructions are quite good:
+\url{https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/}
+
+If you're using \href{https://domain.com}{domain.com}
+
+\hypertarget{post-workshop-tasks}{%
+\subsection{Post-workshop tasks}\label{post-workshop-tasks}}
+
+\begin{itemize}
+\tightlist
+\item
+  Check-in with yourself:
+\item
+  What is
+\end{itemize}
+
+\hypertarget{session-2-blogging-with-distill}{%
+\section{Session 2: Blogging with Distill}\label{session-2-blogging-with-distill}}
+
+\textbf{More information coming soon.}
+
+\hypertarget{session-3-content-development}{%
+\section{Session 3: Content development}\label{session-3-content-development}}
+
+\textbf{More information coming soon.}
+
+\hypertarget{appendix-appendix}{%
+\appendix}
+
+
+\hypertarget{domain}{%
+\section{Buy a domain name (optional)}\label{domain}}
+
+You \textbf{do not have to buy anything} to build and host a professional personal website as a student. BUT, if you've always wanted to own www.firstnamelastname.com, here are some instructions. Note, if you're not sure what a domain name is there are heaps of explainer articles online, just search ``what is a domain name''. You don't really need to know too much.
+
+\hypertarget{some-caveats-before-we-continue}{%
+\subsubsection{Some caveats before we continue}\label{some-caveats-before-we-continue}}
+
+\begin{itemize}
+\tightlist
+\item
+  I'd recommend doing some of your own further research to make sure this is actually the best approach for you and what you actually want or need.
+\item
+  This isn't legal or financial advice. Duh.
+\end{itemize}
+
+\hypertarget{but-what-if-you-dont-buy-a-domain-name}{%
+\subsection{But what if you don't buy a domain name?}\label{but-what-if-you-dont-buy-a-domain-name}}
+
+If you don't want to buy a domain name, your personal website's address will appear as: \texttt{your-github-username.github.io}. Even more reason to choose a good username! See more in the \protect\hyperlink{prereqs}{prerequisite secion}.
+
+For example, I made a simple landing page for the ISSC at \url{https://uoft-doss-issc.github.io/}.
+
+\end{document}

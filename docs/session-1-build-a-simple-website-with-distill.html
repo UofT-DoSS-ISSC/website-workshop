@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Session 1: Build a simple website with Distill | ISSC: Building a personal website workshop series</title>
+  <meta name="description" content="Instructions and resources for a series of workshops about building a website in Distill." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Session 1: Build a simple website with Distill | ISSC: Building a personal website workshop series" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Instructions and resources for a series of workshops about building a website in Distill." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Session 1: Build a simple website with Distill | ISSC: Building a personal website workshop series" />
+  
+  <meta name="twitter:description" content="Instructions and resources for a series of workshops about building a website in Distill." />
+  
+
+<meta name="author" content="Liza Bolton" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="prereqs.html"/>
+<link rel="next" href="session-2-blogging-with-distill.html"/>
+<script src="libs/header-attrs-2.7.12/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Building a personal website</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-were-going-to-do-during-the-workshop-series"><i class="fa fa-check"></i><b>1.1</b> What we’re going to do during the workshop series</a></li>
+</ul></li>
+<li class="part"><span><b>I Prerequisites</b></span></li>
+<li class="chapter" data-level="2" data-path="prereqs.html"><a href="prereqs.html"><i class="fa fa-check"></i><b>2</b> What you need to do before the first session</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="prereqs.html"><a href="prereqs.html#decide-if-this-is-the-right-way-of-making-a-website-for-you"><i class="fa fa-check"></i><b>2.1</b> Decide if this is the right way of making a website for you</a></li>
+<li class="chapter" data-level="2.2" data-path="prereqs.html"><a href="prereqs.html#technical-tasks"><i class="fa fa-check"></i><b>2.2</b> Technical tasks</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="prereqs.html"><a href="prereqs.html#what-is-github-and-why-do-you-want-it"><i class="fa fa-check"></i><b>2.2.1</b> What is GitHub and why do you want it?</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Workshop sessions</b></span></li>
+<li class="chapter" data-level="3" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html"><i class="fa fa-check"></i><b>3</b> Session 1: Build a simple website with Distill</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#s1pre"><i class="fa fa-check"></i><b>3.1</b> To do before the workshop</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#thank-you-rohan"><i class="fa fa-check"></i><b>3.1.1</b> Thank you, Rohan!</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#workshop-instructions"><i class="fa fa-check"></i><b>3.2</b> Workshop instructions</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#landing-page-with-postcards"><i class="fa fa-check"></i><b>3.2.1</b> Landing page with <code>postcards</code></a></li>
+<li class="chapter" data-level="3.2.2" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#multipage-site"><i class="fa fa-check"></i><b>3.2.2</b> Multipage site</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#other-tips"><i class="fa fa-check"></i><b>3.3</b> Other tips</a></li>
+<li class="chapter" data-level="3.4" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#setting-up-a-custom-domain"><i class="fa fa-check"></i><b>3.4</b> Setting up a custom domain</a></li>
+<li class="chapter" data-level="3.5" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#post-workshop-tasks"><i class="fa fa-check"></i><b>3.5</b> Post-workshop tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="session-2-blogging-with-distill.html"><a href="session-2-blogging-with-distill.html"><i class="fa fa-check"></i><b>4</b> Session 2: Blogging with Distill</a></li>
+<li class="chapter" data-level="5" data-path="session-3-content-development.html"><a href="session-3-content-development.html"><i class="fa fa-check"></i><b>5</b> Session 3: Content development</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="domain.html"><a href="domain.html"><i class="fa fa-check"></i><b>A</b> Buy a domain name (optional)</a>
+<ul>
+<li class="chapter" data-level="A.0.1" data-path="domain.html"><a href="domain.html#some-caveats-before-we-continue"><i class="fa fa-check"></i><b>A.0.1</b> Some caveats before we continue</a></li>
+<li class="chapter" data-level="A.1" data-path="domain.html"><a href="domain.html#but-what-if-you-dont-buy-a-domain-name"><i class="fa fa-check"></i><b>A.1</b> But what if you don’t buy a domain name?</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.statistics.utoronto.ca/" target="blank">Deparment of Statistical Sciences</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ISSC: Building a personal website workshop series</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="session-1-build-a-simple-website-with-distill" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Session 1: Build a simple website with Distill</h1>
+<div id="s1pre" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> To do before the workshop</h2>
+<ul>
+<li><p><input type="checkbox" unchecked></input> Complete all the steps in the <a href="prereqs.html#prereqs">prerequisites</a> section.</p></li>
+<li><p><input type="checkbox" unchecked></input> Decide if you want to buy a <a href="domain.html#domain">domain name (see appendix)</a>. Buying a domain name is <strong>totally optional</strong>, and you don’t have to decide now. But, if you know you want to, you might as well get set up now.</p></li>
+<li><p><input type="checkbox" unchecked></input> Decide what links to external things you want to share on your website. Have them easily accessible to copy and paste. <em>GitHub? LinkedIn? Twitter?</em></p></li>
+<li><p><input type="checkbox" unchecked></input> Choose a profile picture for your website. A headshot with a simple background is best. If you don’t have one/don’t want to show a photo, you may want to find some other form of an avatar or placeholder picture. Have the PNG or JPEG easily available to copy to the file you’ll need.</p></li>
+<li><p><input type="checkbox" unchecked></input> <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">Download the R Markdown cheat sheet</a> and pay special attention to the ‘<strong>Pandoc’s Markdown</strong>’ section on the lefthand side of the second page.</p></li>
+<li><p><input type="checkbox" unchecked></input> Install the below R packages. I.e., copy and paste the below code into your R console and run it. If you’re not sure what this means or how to do it, come talk to use during a TidyTuesday and Talk session (Tuesdays, from 2:00 to 3:00 p.m. ET, on Zoom, see the <a href="https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/_layouts/15/Events.aspx?ListGuid=0679786c-8a7e-483c-9ec5-3845602a70e5">Events list</a>)</p></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="session-1-build-a-simple-website-with-distill.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;postcards&#39;</span>)</span>
+<span id="cb1-2"><a href="session-1-build-a-simple-website-with-distill.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;distill&#39;</span>)</span></code></pre></div>
+<div id="thank-you-rohan" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Thank you, Rohan!</h3>
+<p>Major credit to Prof. Rohan Alexander for his teaching notes about making a website. You can find them at: <a href="https://www.tellingstorieswithdata.com/interactive-communication.html#making-a-website" class="uri">https://www.tellingstorieswithdata.com/interactive-communication.html#making-a-website</a></p>
+<p>His personal website is also made with distill, <a href="https://rohanalexander.com/" class="uri">https://rohanalexander.com/</a>.</p>
+</div>
+</div>
+<div id="workshop-instructions" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Workshop instructions</h2>
+<div id="landing-page-with-postcards" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Landing page with <code>postcards</code></h3>
+<p>Let’s start with the most basic thing we can do, create a landing page with a brief bio and some key links. It is a bit like a business card for the digital age.</p>
+<p>This page can later become the home page of your website, or you might find you want to do something more customized.</p>
+<ol style="list-style-type: decimal">
+<li><p>Make sure you have <a href="session-1-build-a-simple-website-with-distill.html#s1pre">installed packages you needed to.</a></p></li>
+<li><p>Create a new R project using the postcard template:</p>
+<ol style="list-style-type: lower-alpha">
+<li>‘File -&gt; New Project -&gt; New Directory -&gt; Postcards Website.’.</li>
+<li>Choose a sensible location for this project to live on your computer.</li>
+<li>Pick a theme, I’d recommend trying ‘trestles’ for now, but you can see all the different ‘looks’ <a href="https://github.com/seankross/postcards">here (scroll down)</a>.</li>
+<li>Choose ‘Open in new session’, just to be safe.</li>
+</ol></li>
+<li><p>Run this code in your console: <code>file.create('.nojekyll')</code>. It tell GitHub something important about how <em>not</em> to build the site.</p></li>
+<li><p>Navigate to the <strong>Build</strong> tab in the environment pane (usually the top right pane in your R Studio if you haven’t customized the layout) and click <strong>Build Website</strong>. This should create a pop-up that allows you to preview what the basic template builds.</p></li>
+<li></li>
+</ol>
+<div id="example" class="section level4" number="3.2.1.1">
+<h4><span class="header-section-number">3.2.1.1</span> Example</h4>
+<p>I made the ISSC a landing page. You can view it at <a href="https://uoft-doss-issc.github.io/" class="uri">https://uoft-doss-issc.github.io/</a> and the code is available on <a href="https://github.com/UofT-DoSS-ISSC/UofT-DoSS-ISSC.github.io">GitHub</a>.</p>
+</div>
+</div>
+<div id="multipage-site" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Multipage site</h3>
+</div>
+</div>
+<div id="other-tips" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Other tips</h2>
+<ul>
+<li>Add <code>.DS_Store</code> to your <code>.gitignore</code> file (if you’re on a Mac)</li>
+</ul>
+</div>
+<div id="setting-up-a-custom-domain" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Setting up a custom domain</h2>
+<p>It can take a while (like, a day or so) to update the redirection between your GitHub page and your domain, so be prepared to be patient!</p>
+<p>These instructions are quite good:
+<a href="https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/" class="uri">https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/</a></p>
+<p>If you’re using <a href="https://domain.com">domain.com</a></p>
+</div>
+<div id="post-workshop-tasks" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Post-workshop tasks</h2>
+<ul>
+<li>Check-in with yourself:</li>
+<li>What is</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="prereqs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="session-2-blogging-with-distill.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["website-workshop.pdf", "website-workshop.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
