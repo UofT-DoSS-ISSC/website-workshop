@@ -1,4 +1,5 @@
 introduction
+why-make-a-website
 what-were-going-to-do-during-the-workshop-series
 prereqs
 decide-if-this-is-the-right-way-of-making-a-website-for-you
