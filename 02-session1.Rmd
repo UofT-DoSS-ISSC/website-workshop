@@ -6,19 +6,20 @@
 
 -   <input type="checkbox" unchecked></input> Complete all the steps in the [prerequisites](#prereqs) section.
 
--   <input type="checkbox" unchecked></input> Decide if you want to buy a [domain name (see appendix)](#domain). Buying a domain name is __totally optional__, and you don't have to decide now. But, if you know you want to, you might as well get set up now.
+-   <input type="checkbox" unchecked></input> Decide if you want to buy a [domain name (see appendix)](#domain). Buying a domain name is **totally optional**, and you don't have to decide now. But, if you know you want to, you might as well get set up now.
 
--   <input type="checkbox" unchecked></input> Decide what links to external things you want to share on your website. Have them easily accessible to copy and paste. _GitHub? LinkedIn? Twitter?_
+-   <input type="checkbox" unchecked></input> Decide what links to external things you want to share on your website. Have them easily accessible to copy and paste. *GitHub? LinkedIn? Twitter?*
 
 -   <input type="checkbox" unchecked></input> Choose a profile picture for your website. A headshot with a simple background is best. If you don't have one/don't want to show a photo, you may want to find some other form of an avatar or placeholder picture. Have the PNG or JPEG easily available to copy to the file you'll need.
 
--   <input type="checkbox" unchecked></input> [Download the R Markdown cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf) and pay special attention to the '__Pandoc’s Markdown__' section on the lefthand side of the second page. 
+-   <input type="checkbox" unchecked></input> [Download the R Markdown cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf) and pay special attention to the '**Pandoc's Markdown**' section on the lefthand side of the second page.
 
 -   <input type="checkbox" unchecked></input> Install the below R packages. I.e., copy and paste the below code into your R console and run it. If you're not sure what this means or how to do it, come talk to use during a TidyTuesday and Talk session (Tuesdays, from 2:00 to 3:00 p.m. ET, on Zoom, see the [Events list](https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/_layouts/15/Events.aspx?ListGuid=0679786c-8a7e-483c-9ec5-3845602a70e5))
 
 ```{r, eval = FALSE}
-install.packages('postcards')
-install.packages('distill')
+install.packages('postcards') # for landing page
+install.packages('distill') # for multipage site
+install.packages('usethis') # for easy connection to Git and GitHub
 ```
 
 ### Thank you, Rohan!
@@ -38,35 +39,69 @@ This page can later become the home page of your website, or you might find you 
 1.  Make sure you have [installed packages you needed to.](#s1pre)
 
 2.  Create a new R project using the postcard template:
-    a. 'File -\> New Project -\> New Directory -\> Postcards Website.'. 
-    b. Choose a sensible location for this project to live on your computer.
-    c. Pick a theme, I'd recommend trying 'trestles' for now, but you can see all the different 'looks' [here (scroll down)](https://github.com/seankross/postcards).
-    d. Choose 'Open in new session', just to be safe. 
 
-3. Run this code in your console: `file.create('.nojekyll')`. It tell GitHub something important about how _not_ to build the site.
+    a.  'File -\> New Project -\> New Directory -\> Postcards Website.'.
+    b.  Choose a sensible location for this project to live on your computer. I'd recommend just calling this something like 'task1'.
+    c.  Pick a theme, I'd recommend trying 'trestles' for now, but you can see all the different 'looks' [here (scroll down)](https://github.com/seankross/postcards).
+    d.  Choose 'Open in new session', just to be safe.
 
-4. Navigate to the __Build__ tab in the environment pane (usually the top right pane in your R Studio if you haven't customized the layout) and click __Build Website__. This should create a pop-up that allows you to preview what the basic template builds.
+3.  Run `file.create('.nojekyll')` in your console. It will later tell GitHub something about how *not* to build your site.
+
+4.  Open the 'index.Rmd' file and Knit it to View what it looks like. 
 
 5. 
 
+6.  Set up Git and a GitHub repo. Commit and push. There are quite a few ways to do this (see [Happy Git with R](https://happygitwithr.com/existing-github-last.html) to GitHub with the help of the `usethis` package.
+
+    a.  In your console, run `usethis::use_git()` .
+
+        1.  You'll be asked if it is okay to commit your uncommitted files. Read the options and enter the number for 'Yes'.
+
+        2.  You'll then be asked about restarting so the Git panel can be available. Choose to restart.
+
+    b.  If you configured your GitHub Personal Access Token (PAT) (see Chapter 10 of Happy Git with R: Cache credentials for HTTPS) you can run `usethis::use_github()` in your console to set up and push to a repo of the same name as the folder you set up (e.g. 'task1'). You'll be able to delete this later once your website has taken it's final form.
+    
+       1.  GitHub should open in your browser. If not, navigate to your GitHub repo for the site and go Settings (top horizontal menu)  and then Pages (vertical menus on left)
+       2.  Under source, change from None to master (or main if that is what your branch is called) and change /(root) to /docs and click save.
+       
+6.  Make a change and repush to GitHub using the terminal tab!
+
+```
+git status
+git add -A
+git commit -m "push me and then just touch me (this song came outbefore some of you were born)"
+git push
+```
+       
 
 #### Example
 
-I made the ISSC a landing page. You can view it at https://uoft-doss-issc.github.io/ and the code is available on [GitHub](https://github.com/UofT-DoSS-ISSC/UofT-DoSS-ISSC.github.io). 
+I made the ISSC a landing page. You can view it at <https://uoft-doss-issc.github.io/> and the code is available on [GitHub](https://github.com/UofT-DoSS-ISSC/UofT-DoSS-ISSC.github.io).
 
 ### Multipage site
 
+1.  Make sure you have [installed packages you needed to.](#s1pre)
+
+2.  Create a new R project using the postcard template:
+
+    a.  'File -\> New Project -\> New Directory -\> Distill Website.'.
+    b.  Choose a sensible location for this project to live on your computer. I'd recommend just calling this something like 'task2' for now.
+    c.  Tick 'Configure for GitHub pages'.
+    d.  Choose 'Open in new session', just to be safe.
+    
+
+4.  Navigate to the **Build** tab in the environment pane (usually the top right pane in your R Studio if you haven't customized the layout) and click **Build Website**. This should create a pop-up that allows you to preview what the basic template builds.
 
 ## Other tips
 
-- Add `.DS_Store` to your `.gitignore` file (if you're on a Mac)
+-   Add `.DS_Store` to your `.gitignore` file (if you're on a Mac)
+-   This blog post from the RStudio team is a great feature summary for the `distill` package: <https://blog.rstudio.com/2020/12/07/distill/>.
 
 ## Setting up a custom domain
 
-It can take a while (like, a day or so) to update the redirection between your GitHub page and your domain, so be prepared to be patient! 
+It can take a while (like, a day or so) to update the redirection between your GitHub page and your domain, so be prepared to be patient!
 
-These instructions are quite good: 
-https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/
+These instructions are quite good: <https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/>
 
 If you're using [domain.com](https://domain.com)
 
