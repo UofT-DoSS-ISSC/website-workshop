@@ -40,6 +40,10 @@ At the core of why I'm imaging you're interested is because on some level you kn
 knitr::include_graphics("images/brentrambo.gif")
 ```
 
+## Details
+
+- [Session 1](#sesh1) was held on 2021-06-03 and a recording is available to members of the Independent Summer Statistics Community and Department of Statistical Sciences (University of Toronto) [on SharePoint](https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/SitePages/Past-events.aspx#website-building-workshop-series-session-1).
+
 <!--chapter:end:index.Rmd-->
 
 # (PART) Prerequisites {-}
@@ -92,7 +96,7 @@ Sign up for GitHub Education Student Developer Pack (access to hundreds of dolla
 
 # (PART) Workshop sessions {.unnumbered}
 
-# Session 1: Build a simple website with Distill
+# Session 1: Build a simple website with Distill {#sesh1}
 
 ## To do before the workshop {#s1pre}
 
@@ -238,6 +242,7 @@ Want to make it easy to email you? Add your email address and a email icon or cu
 
 ## Other tips/resources
 
+-   Need more help with Git/GitHub? Check out the [DoSS Toolkit tutorial](https://dosstoolkit.com/) on it.
 -   Add `.DS_Store` to your `.gitignore` file (if you're on a Mac).
 -   Here are the [getting started notes from the distill team](https://rstudio.github.io/distill/website.html)!
 -   [This blog post from the RStudio team](https://blog.rstudio.com/2020/12/07/distill/) is a great feature summary for the `distill` package.
@@ -252,6 +257,7 @@ These instructions are quite good: <https://richpauloo.github.io/2019-11-17-Link
 ## Post-workshop tasks
 
 -   <input type="checkbox" unchecked></input> Check-in with yourself: What was fun about today? What did you learn? What did you find challenging? Did anything make you want to give up? If so, was why should you keep going with your website?
+-   <input type="checkbox" unchecked></input> Fill out this [short 'ticket out the door' survey.](https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUQUJETTYxTkhUVUlQU0VUOEFFMlBWTjA2Vy4u)
 -   <input type="checkbox" unchecked></input> Do a social media audit. What are you happy with being public and what is private to close friends/family, etc.
 -   <input type="checkbox" unchecked></input> Continue to update your bio, links.
 -   <input type="checkbox" unchecked></input> Make a site plan. What other pages would you like to add? Maybe a testimonials page?

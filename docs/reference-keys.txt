@@ -1,11 +1,12 @@
 introduction
 why-make-a-website
 what-were-going-to-do-during-the-workshop-series
+details
 prereqs
 decide-if-this-is-the-right-way-of-making-a-website-for-you
 technical-tasks
 what-is-github-and-why-do-you-want-it
-session-1-build-a-simple-website-with-distill
+sesh1
 s1pre
 thank-you-rohan
 workshop-instructions

@@ -39,3 +39,7 @@ At the core of why I'm imaging you're interested is because on some level you kn
 ```{r, fig.align = "center", echo = FALSE}
 knitr::include_graphics("images/brentrambo.gif")
 ```
+
+## Details
+
+- [Session 1](#sesh1) was held on 2021-06-03 and a recording is available to members of the Independent Summer Statistics Community and Department of Statistical Sciences (University of Toronto) [on SharePoint](https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/SitePages/Past-events.aspx#website-building-workshop-series-session-1).
