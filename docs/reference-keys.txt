@@ -12,11 +12,12 @@ workshop-instructions
 landing-page-with-postcards
 example
 multipage-site
-other-tips
+other-tipsresources
 setting-up-a-custom-domain
 post-workshop-tasks
 session-2-blogging-with-distill
 session-3-content-development
 domain
-some-caveats-before-we-continue
+some-caveats
+dont-pay-full-price
 but-what-if-you-dont-buy-a-domain-name

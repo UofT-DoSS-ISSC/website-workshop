@@ -4,12 +4,15 @@
 
 You __do not have to buy anything__ to build and host a professional personal website as a student. BUT, if you've always wanted to own www.firstnamelastname.com, here are some instructions. Note, if you're not sure what a domain name is there are heaps of explainer articles online, just search "what is a domain name". You don't really need to know too much.
 
-### Some caveats before we continue
+### Some caveats
 
 - I'd recommend doing some of your own further research to make sure this is actually the best approach for you and what you actually want or need.
 - This isn't legal or financial advice. Duh. 
 
 
+### Don't pay full price! 
+
+There is almost always a deal going on. May not still be live when you're looking, but 'nameboy' was a code for 25% of domains.com when I was setting up mine.
 
 ## But what if you don't buy a domain name?
 

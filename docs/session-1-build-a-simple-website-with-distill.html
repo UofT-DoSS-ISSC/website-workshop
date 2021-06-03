@@ -161,7 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.1" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#landing-page-with-postcards"><i class="fa fa-check"></i><b>3.2.1</b> Landing page with <code>postcards</code></a></li>
 <li class="chapter" data-level="3.2.2" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#multipage-site"><i class="fa fa-check"></i><b>3.2.2</b> Multipage site</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#other-tips"><i class="fa fa-check"></i><b>3.3</b> Other tips</a></li>
+<li class="chapter" data-level="3.3" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#other-tipsresources"><i class="fa fa-check"></i><b>3.3</b> Other tips/resources</a></li>
 <li class="chapter" data-level="3.4" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#setting-up-a-custom-domain"><i class="fa fa-check"></i><b>3.4</b> Setting up a custom domain</a></li>
 <li class="chapter" data-level="3.5" data-path="session-1-build-a-simple-website-with-distill.html"><a href="session-1-build-a-simple-website-with-distill.html#post-workshop-tasks"><i class="fa fa-check"></i><b>3.5</b> Post-workshop tasks</a></li>
 </ul></li>
@@ -170,7 +170,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="domain.html"><a href="domain.html"><i class="fa fa-check"></i><b>A</b> Buy a domain name (optional)</a>
 <ul>
-<li class="chapter" data-level="A.0.1" data-path="domain.html"><a href="domain.html#some-caveats-before-we-continue"><i class="fa fa-check"></i><b>A.0.1</b> Some caveats before we continue</a></li>
+<li class="chapter" data-level="A.0.1" data-path="domain.html"><a href="domain.html#some-caveats"><i class="fa fa-check"></i><b>A.0.1</b> Some caveats</a></li>
+<li class="chapter" data-level="A.0.2" data-path="domain.html"><a href="domain.html#dont-pay-full-price"><i class="fa fa-check"></i><b>A.0.2</b> Don’t pay full price!</a></li>
 <li class="chapter" data-level="A.1" data-path="domain.html"><a href="domain.html#but-what-if-you-dont-buy-a-domain-name"><i class="fa fa-check"></i><b>A.1</b> But what if you don’t buy a domain name?</a></li>
 </ul></li>
 <li class="divider"></li>
@@ -205,8 +206,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><input type="checkbox" unchecked></input> <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">Download the R Markdown cheat sheet</a> and pay special attention to the ‘<strong>Pandoc’s Markdown</strong>’ section on the lefthand side of the second page.</p></li>
 <li><p><input type="checkbox" unchecked></input> Install the below R packages. I.e., copy and paste the below code into your R console and run it. If you’re not sure what this means or how to do it, come talk to use during a TidyTuesday and Talk session (Tuesdays, from 2:00 to 3:00 p.m. ET, on Zoom, see the <a href="https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/_layouts/15/Events.aspx?ListGuid=0679786c-8a7e-483c-9ec5-3845602a70e5">Events list</a>)</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="session-1-build-a-simple-website-with-distill.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;postcards&#39;</span>)</span>
-<span id="cb1-2"><a href="session-1-build-a-simple-website-with-distill.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;distill&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="session-1-build-a-simple-website-with-distill.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;postcards&#39;</span>) <span class="co"># for landing page</span></span>
+<span id="cb1-2"><a href="session-1-build-a-simple-website-with-distill.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;distill&#39;</span>) <span class="co"># for multipage site</span></span>
+<span id="cb1-3"><a href="session-1-build-a-simple-website-with-distill.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;usethis&#39;</span>) <span class="co"># for easy connection to Git and GitHub</span></span></code></pre></div>
 <div id="thank-you-rohan" class="section level3" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> Thank you, Rohan!</h3>
 <p>Major credit to Prof. Rohan Alexander for his teaching notes about making a website. You can find them at: <a href="https://www.tellingstorieswithdata.com/interactive-communication.html#making-a-website" class="uri">https://www.tellingstorieswithdata.com/interactive-communication.html#making-a-website</a></p>
@@ -224,14 +226,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Create a new R project using the postcard template:</p>
 <ol style="list-style-type: lower-alpha">
 <li>‘File -&gt; New Project -&gt; New Directory -&gt; Postcards Website.’.</li>
-<li>Choose a sensible location for this project to live on your computer.</li>
+<li>Choose a sensible location for this project to live on your computer. I’d recommend just calling this something like ‘task1’.</li>
 <li>Pick a theme, I’d recommend trying ‘trestles’ for now, but you can see all the different ‘looks’ <a href="https://github.com/seankross/postcards">here (scroll down)</a>.</li>
 <li>Choose ‘Open in new session’, just to be safe.</li>
 </ol></li>
-<li><p>Run this code in your console: <code>file.create('.nojekyll')</code>. It tell GitHub something important about how <em>not</em> to build the site.</p></li>
-<li><p>Navigate to the <strong>Build</strong> tab in the environment pane (usually the top right pane in your R Studio if you haven’t customized the layout) and click <strong>Build Website</strong>. This should create a pop-up that allows you to preview what the basic template builds.</p></li>
-<li></li>
+<li><p>Run <code>file.create('.nojekyll')</code> in your console. It will later tell GitHub something about how <em>not</em> to build your site.</p></li>
+<li><p>Open the ‘index.Rmd’ file and Knit it to View what it looks like.</p></li>
+<li><p>Change the title to your name, add your photo to the folder you’re working in and change the image to that. Update the links with whatever you want to include. Update the text below the YAML. You might like to use the headings “Education” and “Projects” if you’re likely to stick with a one-page site.</p></li>
+<li><p>Set up Git and a GitHub repo. Commit and push. There are quite a few ways to do this (see <a href="https://happygitwithr.com/existing-github-last.html">Happy Git with R</a> to GitHub with the help of the <code>usethis</code> package.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>In your console, run <code>usethis::use_git()</code> .</p>
+<ol style="list-style-type: decimal">
+<li><p>You’ll be asked if it is okay to commit your uncommitted files. Read the options and enter the number for ‘Yes’.</p></li>
+<li><p>You’ll then be asked about restarting so the Git panel can be available. Choose to restart.</p></li>
+</ol></li>
+<li><p>If you configured your GitHub Personal Access Token (PAT) (see Chapter 10 of Happy Git with R: Cache credentials for HTTPS) you can run <code>usethis::use_github()</code> in your console to set up and push to a repo of the same name as the folder you set up (e.g. ‘task1’). You’ll be able to delete this later once your website has taken it’s final form.</p></li>
+<li><p>GitHub should open in your browser. If not, navigate to your GitHub repo for the site and go Settings (top horizontal menu) and then Pages (vertical menus on left)</p></li>
+<li><p>Under source, change from None to master (or main if that is what your branch is called) and change /(root) to /docs and click save.</p></li>
+</ol></li>
+<li><p>Make a change and repush to GitHub using the terminal tab! (Update the commit message.) Or use the Git pane, or however else you’ve learned to set yourself up.</p></li>
 </ol>
+<!-- -->
+<pre><code>git status
+git add -A
+git commit -m &quot;look at this hopefully meaningful message&quot;
+git push</code></pre>
 <div id="example" class="section level4" number="3.2.1.1">
 <h4><span class="header-section-number">3.2.1.1</span> Example</h4>
 <p>I made the ISSC a landing page. You can view it at <a href="https://uoft-doss-issc.github.io/" class="uri">https://uoft-doss-issc.github.io/</a> and the code is available on <a href="https://github.com/UofT-DoSS-ISSC/UofT-DoSS-ISSC.github.io">GitHub</a>.</p>
@@ -239,26 +258,77 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="multipage-site" class="section level3" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> Multipage site</h3>
+<ol style="list-style-type: decimal">
+<li><p>Make sure you have <a href="session-1-build-a-simple-website-with-distill.html#s1pre">installed packages you needed to.</a></p></li>
+<li><p>Create a new R project using the distill website template:</p>
+<ol style="list-style-type: lower-alpha">
+<li>‘File -&gt; New Project -&gt; New Directory -&gt; Distill Website.’.</li>
+<li>Choose a sensible location for this project to live on your computer. I’d recommend just calling this something like ‘task2’ for now.</li>
+<li>Tick ‘Configure for GitHub pages’.</li>
+<li>Choose ‘Open in new session’, just to be safe.</li>
+</ol></li>
+<li><p>Navigate to the <strong>Build</strong> tab in the environment pane (usually the top right pane in your R Studio if you haven’t customized the layout) and click <strong>Build Website</strong>. This should create a pop-up that allows you to preview what the basic template builds.</p></li>
+<li><p>Open the <strong>index.Rmd</strong> file you made in task 1 and copy the entire thing into the <strong>index.Rmd</strong> file in your current project.</p></li>
+<li><p>Add this line to your YAML <code>site: distill::distill_website</code> for this newly transplanted <strong>index.Rmd.</strong> Doesn’t matter which line you put it on.</p></li>
+<li><p>Now we’re going to start by exploring the _<strong>site.yml</strong> file. This is how you’ll set up the navigation bar for your website.</p>
+<p>Start by updating the name, title and description. Only change the description on line 4 and keep the tab in front of the text. Wow, look at this creative example!</p></li>
+</ol>
+<!-- -->
+<pre><code>    name: &quot;lizawebsite&quot;
+    title: &quot;Liza Bolton&quot;
+    description: |
+    Liza Bolton</code></pre>
+<p>Next, let’s add links to any social media or other platforms you want to promote. Don’t link social media or platforms you wouldn’t be comfortable with an employer seeing (and probably make those accounts private). This example is for GitHub. You can also do Twitter (`fa-twitter`) and LinkedIn (`fa-linkedin`) and probably some others.</p>
+<pre><code>    - icon: fa fa-github
+      href: https://github.com/elb0</code></pre>
+<p>Want to make it easy to email you? Add your email address and a email icon or cute paper plane icon (`fa-paper-plane`) to the navigation bar. Or you could add these as buttons under your picture if you’d prefer.</p>
+<pre><code>   - icon: fa fa-envelope
+     href: mailto:liza.bolton@utoronto.ca</code></pre>
+<ol start="7" style="list-style-type: decimal">
+<li><p>Let’s create a <strong>Projects</strong> page. Run this code in your console: <code>distill::create_article("projects").</code> This will create a new Rmd call <strong>projects.Rmd</strong>. Update it, Knit it and then we’ll add it to the <strong>_site.yml</strong> and build the site again.</p>
+<ol style="list-style-type: decimal">
+<li>Want a table of contents? Update your YAML.</li>
+</ol>
+<!-- -->
+<pre><code>output:
+    distill::distill_article:
+        toc: true
+        toc_depth: 3</code></pre></li>
+<li><p>Next, we’re going to create a CV page. You can either have your CV as a PDF and set it up to open directly or create a new page with your CV information.</p>
+<ol style="list-style-type: decimal">
+<li><p>If you’re creating a page, you’ll do basically the same things as the step above.</p></li>
+<li><p>If you have a PDF of your CV, create a new folder called <strong>pdfs</strong> in your main file (you could call it something else too…) and put the PDF you want in there. Then we’ll add it to the navigation bar with:</p></li>
+</ol></li>
+</ol>
+<!-- -->
+<pre><code>    - text: &quot;CV&quot;  
+      href: pdfs/mycv.pdf</code></pre>
+<p>(But update the file name.)</p>
 </div>
 </div>
-<div id="other-tips" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Other tips</h2>
+<div id="other-tipsresources" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Other tips/resources</h2>
 <ul>
-<li>Add <code>.DS_Store</code> to your <code>.gitignore</code> file (if you’re on a Mac)</li>
+<li>Add <code>.DS_Store</code> to your <code>.gitignore</code> file (if you’re on a Mac).</li>
+<li>Here are the <a href="https://rstudio.github.io/distill/website.html">getting started notes from the distill team</a>!</li>
+<li><a href="https://blog.rstudio.com/2020/12/07/distill/">This blog post from the RStudio team</a> is a great feature summary for the <code>distill</code> package.</li>
+<li>Explore the <a href="https://distillery.rbind.io/showcase.html">Distillery Showcase</a> of websites made with Distill! Some great inspiration here.</li>
 </ul>
 </div>
 <div id="setting-up-a-custom-domain" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Setting up a custom domain</h2>
 <p>It can take a while (like, a day or so) to update the redirection between your GitHub page and your domain, so be prepared to be patient!</p>
-<p>These instructions are quite good:
-<a href="https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/" class="uri">https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/</a></p>
-<p>If you’re using <a href="https://domain.com">domain.com</a></p>
+<p>These instructions are quite good: <a href="https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/" class="uri">https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/</a></p>
 </div>
 <div id="post-workshop-tasks" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> Post-workshop tasks</h2>
 <ul>
-<li>Check-in with yourself:</li>
-<li>What is</li>
+<li><input type="checkbox" unchecked></input> Check-in with yourself: What was fun about today? What did you learn? What did you find challenging? Did anything make you want to give up? If so, was why should you keep going with your website?</li>
+<li><input type="checkbox" unchecked></input> Do a social media audit. What are you happy with being public and what is private to close friends/family, etc.</li>
+<li><input type="checkbox" unchecked></input> Continue to update your bio, links.</li>
+<li><input type="checkbox" unchecked></input> Make a site plan. What other pages would you like to add? Maybe a testimonials page?</li>
+<li><input type="checkbox" unchecked></input> Start thinking about what colours you like and/or what colours would help communicate your personality. Currently your site will have a blue navigation bar, but we will learn some basic ways to change the look and feel in our next session.</li>
+<li><input type="checkbox" unchecked></input> Add your website URL to your email signature, once you feel it is in an okay state of readiness. We’re also going to add more to it over the next few sessions so feel free to wait, too.</li>
 </ul>
 
 </div>
