@@ -1,5 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.book.font-family-1 {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Libre+Baskerville', serif;
+  color: #3C143F;
+}
+
+.book .book-summary ul.summary li.active>a { /*active TOC links*/
+  color: #3C143F !important;
+  border-left: solid 4px;
+  border-color: #3C143F;
+  padding-left: 11px !important;
+}
+
+.title {
+  font-family: 'Libre+Baskerville', serif;
+  font-size: 3em !important;
+  color: #3C143F;
+  margin-top: 0.275em !important;
+  margin-bottom: 0.35em !important;
+}
+
+.subtitle {
+  font-family: 'Libre+Baskerville', serif;
+  color: #611E65;
+}
+
+.summary{
+  font-family: 'Libre+Baskerville', serif;
+}
+
+a {
+  color: #611E65;
+}
+
+a:hover, a:active {
+  color: #87528A;
+  text-decoration: underline;
+}
+
+ul > li::marker {
+  color: #87528A;
+}
+
 p.caption {
-  color: #777;
+  color: #777;  
   margin-top: 10px;
 }
 p code {

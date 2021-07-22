@@ -1,16 +1,15 @@
---- 
+---
 title: "ISSC: Building a personal website workshop series"
-author: "Liza Bolton"
+author: "Liza Bolton, Megan Whitehead-Douglas, Dee Keilholz"
 date: "Last updated `r Sys.Date()`"
 site: bookdown::bookdown_site
 description: "Instructions and resources for a series of workshops about building a website in Distill."
 ---
 
-__Unless told otherwise, assume everything in this guide is as yet incomplete!__
 
 # Introduction
 
-There are many, many ways to make a website these days. This workshop series aims to help you make a personal website using the [`distill` package](https://rstudio.github.io/distill/).This is just ONE way that is used by a lots of folks in statistics and that leverages your existing R and R Markdown skills. It is reasonably beginner friendly and creates a professional looking website.
+There are many, many ways to make a website these days. This workshop series aims to help you make a personal website using the [`distill` package](https://rstudio.github.io/distill/). This is just ONE way that is used by a lots of folks in statistics and that leverages your existing R and R Markdown skills. It is reasonably beginner friendly and creates a professional looking website.
 
 Note: If you already have a personal website, sessions 2 and/or 3 may still be of interest to you. You can attend as many or as few of these sessions as you would like.
 
@@ -18,28 +17,42 @@ Note: If you already have a personal website, sessions 2 and/or 3 may still be o
 
 There are many reasons why you might want or need a website (which might also be why there are so many ways to make one!). I'm going to assume your main motivations might be some subset of the below:
 
-- You want to make it easier for employers/prospective supervisors to find examples of your analysis and communication work, your projects (i.e., your portfolio).
-- You want to have a home for sharing your side projects with folks with similar interests.
-- You want to have a hub from which to share your bio, CV other profiles/links etc., a detailed digital business card of sorts.
-- It sounds fun!
+-   You want to make it easier for employers/prospective supervisors to find examples of your analysis and communication work, your projects (i.e., your portfolio).
+-   You want to have a home for sharing your side projects with folks with similar interests.
+-   You want to have a hub from which to share your bio, CV other profiles/links etc., a detailed digital business card of sorts.
+-   It sounds fun!
 
-At the core of why I'm imaging you're interested is because on some level you know that __communication__ is important. You want to communicate to the world about who you are and what you can do. Building a website can be useful both as the _medium_ for sharing, but also as a _method_ of exploring and reflecting on how you want to communicate about yourself to the world. For this reason, this series aims to combine the coding and tools aspect, with other tasks around writing and reflection, so that once you have a website, you'll also be clear on your purpose for it, how it should look and feel, and have some things to put on it.
+At the core of why I'm imaging you're interested is because on some level you know that **communication** is important. You want to communicate to the world about who you are and what you can do. Building a website can be useful both as the *medium* for sharing, but also as a *method* of exploring and reflecting on how you want to communicate about yourself to the world. For this reason, this series aims to combine the coding and tools aspect, with other tasks around writing and reflection, so that once you have a website, you'll also be clear on your purpose for it, how it should look and feel, and have some things to put on it.
 
 ## What we're going to do during the workshop series
 
-- Get set up with R/RStudio/Git and GitHub (if not already)
-- Build a basic landing page website with `postcards`
-- Create a multi-paged paged website with `distill`
-- Begin to develop an aesthetic for your "'personal brand' ^[Do we hate the concept of 'personal brand'? I think there is some value in thinking about how we make it easier for the world to understand us...but there is so much grossness with it too...]
-- Learn some basic ways to edit the look and feel of a site with CSS
-- Set up and post a first blog post
-- Develop and polish professional content for your website and blog
-- Connect to additional U of T resources that can help you develop your professional digital presence (TBC)
+-   Get set up with R/RStudio/Git and GitHub (if not already)
+-   Build a basic landing page website with `postcards`
+-   Create a multi-paged paged website with `distill`
+-   Begin to develop an aesthetic for your "'personal brand' [^index-1]
+-   Learn some basic ways to edit the look and feel of a site with CSS
+-   Set up and post a first blog post
+-   Develop and polish professional content for your website and blog
+-   Connect to additional U of T resources that can help you develop your professional digital presence (TBC)
+
+[^index-1]: Do we hate the concept of 'personal brand'? I think there is some value in thinking about how we make it easier for the world to understand us...but there is so much grossness with it too...
 
 ```{r, fig.align = "center", echo = FALSE}
-knitr::include_graphics("images/brentrambo.gif")
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output('In the HTML version of these notes there is a GIF here.')
+} else {
+ knitr::include_graphics("images/brentrambo.gif")
+}
+
 ```
+
+*GIF description: Boy sitting at computer turns to camera and gives a thumbs up and nods his head repeatedly. The name Brent Rambo appears on screen.*
 
 ## Details
 
-- [Session 1](#sesh1) was held on 2021-06-03 and a recording is available to members of the Independent Summer Statistics Community and Department of Statistical Sciences (University of Toronto) [on SharePoint](https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/SitePages/Past-events.aspx#website-building-workshop-series-session-1).
+-   [Session 1](#sesh1) was held on 2021-06-03 and a recording is available to members of the Independent Summer Statistics Community and Department of Statistical Sciences (University of Toronto) [on SharePoint](https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/SitePages/Past-events.aspx#website-building-workshop-series-session-1).
+-  [Session 2](#sesh2) was held on 2021-06-30 and a recording is available to members of the Independent Summer Statistics Community and Department of Statistical Sciences (University of Toronto) [on SharePoint](https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/SitePages/Past-events.aspx#website-building-workshop-series-session-2-personal-brand)
+- [Session 3](#sesh3) was asynchronous, all resources are available in the chapter.
+
+Any questions? Get in touch: liza.bolton@utoronto.ca.

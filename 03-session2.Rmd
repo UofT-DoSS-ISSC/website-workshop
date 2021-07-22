@@ -1,3 +1,23 @@
-# Session 2: Blogging with Distill
+# Session 2: Personal brand
 
-__More information coming soon.__
+**These resources were prepared by [Megan Whitehead-Douglas, Assistant Manager, Employer Relations & Career Development](https://www.statistics.utoronto.ca/people/directories/staff/megan-whitehead-douglas-med), for the ISSC.**
+
+You can find the slides and workbook from this session, below.
+
+## Slides
+
+<object data="pdf/Discovering Your Personal Brand ISSC June 2021 FINAL.pdf" type="application/pdf" style="width:100%;height:500px">
+
+<embed src="pdf/Discovering Your Personal Brand ISSC June 2021 FINAL.pdf" type="application/pdf">
+
+</object>
+
+## Workbook
+
+Download this document to complete it for yourself.
+
+<object data="pdf/Personal Branding Workbook.pdf" type="application/pdf" style="width:100%;height:1100px">
+
+<embed src="pdf/Personal Branding Workbook.pdf" type="application/pdf">
+
+</object>

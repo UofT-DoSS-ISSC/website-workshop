@@ -118,7 +118,7 @@
 
 \title{ISSC: Building a personal website workshop series}
 \author{Liza Bolton}
-\date{Last updated 2021-05-25}
+\date{Last updated 2021-06-04}
 
 \begin{document}
 \maketitle
@@ -132,7 +132,7 @@
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-There are many, many ways to make a website these days. This workshop series aims to help you make a personal website using the \href{https://rstudio.github.io/distill/}{\texttt{distill} package}.This is just ONE way that is used by a lots of folks in statistics and that leverages your existing R and R Markdown skills. It is reasonably beginner friendly and creates a professional looking website.
+There are many, many ways to make a website these days. This workshop series aims to help you make a personal website using the \href{https://rstudio.github.io/distill/}{\texttt{distill} package}. This is just ONE way that is used by a lots of folks in statistics and that leverages your existing R and R Markdown skills. It is reasonably beginner friendly and creates a professional looking website.
 
 Note: If you already have a personal website, sessions 2 and/or 3 may still be of interest to you. You can attend as many or as few of these sessions as you would like.
 
@@ -176,6 +176,19 @@ At the core of why I'm imaging you're interested is because on some level you kn
   Develop and polish professional content for your website and blog
 \item
   Connect to additional U of T resources that can help you develop your professional digital presence (TBC)
+\end{itemize}
+
+In the HTML version of these notes there is a GIF here.
+
+\emph{GIF description: Boy sitting at computer turns to camera and gives a thumbs up and nods his head repeatedly. The name Brent Rambo appears on screen.}
+
+\hypertarget{details}{%
+\subsection{Details}\label{details}}
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{sesh1}{Session 1} was held on 2021-06-03 and a recording is available to members of the Independent Summer Statistics Community and Department of Statistical Sciences (University of Toronto) \href{https://utoronto.sharepoint.com/sites/ArtSci-STA/ISSC/SitePages/Past-events.aspx\#website-building-workshop-series-session-1}{on SharePoint}.
 \end{itemize}
 
 \hypertarget{part-prerequisites}{%
@@ -245,8 +258,8 @@ Sign up for GitHub Education Student Developer Pack (access to hundreds of dolla
 \hypertarget{part-workshop-sessions}{%
 \part{Workshop sessions}\label{part-workshop-sessions}}
 
-\hypertarget{session-1-build-a-simple-website-with-distill}{%
-\section{Session 1: Build a simple website with Distill}\label{session-1-build-a-simple-website-with-distill}}
+\hypertarget{sesh1}{%
+\section{Session 1: Build a simple website with Distill}\label{sesh1}}
 
 \hypertarget{s1pre}{%
 \subsection{To do before the workshop}\label{s1pre}}
@@ -268,8 +281,9 @@ Sign up for GitHub Education Student Developer Pack (access to hundreds of dolla
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{install.packages}\NormalTok{(}\StringTok{\textquotesingle{}postcards\textquotesingle{}}\NormalTok{)}
-\FunctionTok{install.packages}\NormalTok{(}\StringTok{\textquotesingle{}distill\textquotesingle{}}\NormalTok{)}
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{\textquotesingle{}postcards\textquotesingle{}}\NormalTok{) }\CommentTok{\# for landing page}
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{\textquotesingle{}distill\textquotesingle{}}\NormalTok{) }\CommentTok{\# for multipage site}
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{\textquotesingle{}usethis\textquotesingle{}}\NormalTok{) }\CommentTok{\# for easy connection to Git and GitHub}
 \end{Highlighting}
 \end{Shaded}
 
@@ -303,18 +317,50 @@ This page can later become the home page of your website, or you might find you 
   \item
     `File -\textgreater{} New Project -\textgreater{} New Directory -\textgreater{} Postcards Website.'.
   \item
-    Choose a sensible location for this project to live on your computer.
+    Choose a sensible location for this project to live on your computer. I'd recommend just calling this something like `task1'.
   \item
     Pick a theme, I'd recommend trying `trestles' for now, but you can see all the different `looks' \href{https://github.com/seankross/postcards}{here (scroll down)}.
   \item
     Choose `Open in new session', just to be safe.
   \end{enumerate}
 \item
-  Run this code in your console: \texttt{file.create(\textquotesingle{}.nojekyll\textquotesingle{})}. It tell GitHub something important about how \emph{not} to build the site.
+  Run \texttt{file.create(\textquotesingle{}.nojekyll\textquotesingle{})} in your console. It will later tell GitHub something about how \emph{not} to build your site.
 \item
-  Navigate to the \textbf{Build} tab in the environment pane (usually the top right pane in your R Studio if you haven't customized the layout) and click \textbf{Build Website}. This should create a pop-up that allows you to preview what the basic template builds.
+  Open the `index.Rmd' file and Knit it to View what it looks like.
 \item
+  Change the title to your name, add your photo to the folder you're working in and change the image to that. Update the links with whatever you want to include. Update the text below the YAML. You might like to use the headings ``Education'' and ``Projects'' if you're likely to stick with a one-page site.
+\item
+  Set up Git and a GitHub repo. Commit and push. There are quite a few ways to do this (see \href{https://happygitwithr.com/existing-github-last.html}{Happy Git with R} to GitHub with the help of the \texttt{usethis} package.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \item
+    In your console, run \texttt{usethis::use\_git()} .
+
+    \begin{enumerate}
+    \def\labelenumiii{\arabic{enumiii}.}
+    \item
+      You'll be asked if it is okay to commit your uncommitted files. Read the options and enter the number for `Yes'.
+    \item
+      You'll then be asked about restarting so the Git panel can be available. Choose to restart.
+    \end{enumerate}
+  \item
+    If you configured your GitHub Personal Access Token (PAT) (see Chapter 10 of Happy Git with R: Cache credentials for HTTPS) you can run \texttt{usethis::use\_github()} in your console to set up and push to a repo of the same name as the folder you set up (e.g.~`task1'). You'll be able to delete this later once your website has taken it's final form.
+  \item
+    GitHub should open in your browser. If not, navigate to your GitHub repo for the site and go Settings (top horizontal menu) and then Pages (vertical menus on left)
+  \item
+    Under source, change from None to master (or main if that is what your branch is called) and change /(root) to /docs and click save.
+  \end{enumerate}
+\item
+  Make a change and repush to GitHub using the terminal tab! (Update the commit message.) Or use the Git pane, or however else you've learned to set yourself up.
 \end{enumerate}
+
+\begin{verbatim}
+git status
+git add -A
+git commit -m "look at this hopefully meaningful message"
+git push
+\end{verbatim}
 
 \hypertarget{example}{%
 \paragraph{Example}\label{example}}
@@ -324,13 +370,111 @@ I made the ISSC a landing page. You can view it at \url{https://uoft-doss-issc.g
 \hypertarget{multipage-site}{%
 \subsubsection{Multipage site}\label{multipage-site}}
 
-\hypertarget{other-tips}{%
-\subsection{Other tips}\label{other-tips}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Make sure you have \protect\hyperlink{s1pre}{installed packages you needed to.}
+\item
+  Create a new R project using the distill website template:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    `File -\textgreater{} New Project -\textgreater{} New Directory -\textgreater{} Distill Website.'.
+  \item
+    Choose a sensible location for this project to live on your computer. I'd recommend just calling this something like `task2' for now.
+  \item
+    Tick `Configure for GitHub pages'.
+  \item
+    Choose `Open in new session', just to be safe.
+  \end{enumerate}
+\item
+  Navigate to the \textbf{Build} tab in the environment pane (usually the top right pane in your R Studio if you haven't customized the layout) and click \textbf{Build Website}. This should create a pop-up that allows you to preview what the basic template builds.
+\item
+  Open the \textbf{index.Rmd} file you made in task 1 and copy the entire thing into the \textbf{index.Rmd} file in your current project.
+\item
+  Add this line to your YAML \texttt{site:\ distill::distill\_website} for this newly transplanted \textbf{index.Rmd.} Doesn't matter which line you put it on.
+\item
+  Now we're going to start by exploring the \_\textbf{site.yml} file. This is how you'll set up the navigation bar for your website.
+
+  Start by updating the name, title and description. Only change the description on line 4 and keep the tab in front of the text. Wow, look at this creative example!
+\end{enumerate}
+
+\begin{verbatim}
+    name: "lizawebsite"
+    title: "Liza Bolton"
+    description: |
+    Liza Bolton
+\end{verbatim}
+
+Next, let's add links to any social media or other platforms you want to promote. Don't link social media or platforms you wouldn't be comfortable with an employer seeing (and probably make those accounts private). This example is for GitHub. You can also do Twitter (`fa-twitter`) and LinkedIn (`fa-linkedin`) and probably some others.
+
+\begin{verbatim}
+    - icon: fa fa-github
+      href: https://github.com/elb0
+\end{verbatim}
+
+Want to make it easy to email you? Add your email address and a email icon or cute paper plane icon (`fa-paper-plane`) to the navigation bar. Or you could add these as buttons under your picture if you'd prefer.
+
+\begin{verbatim}
+   - icon: fa fa-envelope
+     href: mailto:liza.bolton@utoronto.ca
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\item
+  Let's create a \textbf{Projects} page. Run this code in your console: \texttt{distill::create\_article("projects").} This will create a new Rmd call \textbf{projects.Rmd}. Update it, Knit it and then we'll add it to the \textbf{\_site.yml} and build the site again.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Want a table of contents? Update your YAML.
+  \end{enumerate}
+
+\begin{verbatim}
+output:
+    distill::distill_article:
+        toc: true
+        toc_depth: 3
+\end{verbatim}
+\item
+  Next, we're going to create a CV page. You can either have your CV as a PDF and set it up to open directly or create a new page with your CV information.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    If you're creating a page, you'll do basically the same things as the step above.
+  \item
+    If you have a PDF of your CV, create a new folder called \textbf{pdfs} in your main file (you could call it something else too\ldots) and put the PDF you want in there. Then we'll add it to the navigation bar with:
+  \end{enumerate}
+\end{enumerate}
+
+\begin{verbatim}
+    - text: "CV"  
+      href: pdfs/mycv.pdf
+\end{verbatim}
+
+(But update the file name.)
+
+\hypertarget{other-tipsresources}{%
+\subsection{Other tips/resources}\label{other-tipsresources}}
 
 \begin{itemize}
 \tightlist
 \item
-  Add \texttt{.DS\_Store} to your \texttt{.gitignore} file (if you're on a Mac)
+  Need more help with Git/GitHub? Check out the \href{https://dosstoolkit.com/}{DoSS Toolkit tutorial} on it.
+\item
+  Add \texttt{.DS\_Store} to your \texttt{.gitignore} file (if you're on a Mac).
+\item
+  Here are the \href{https://rstudio.github.io/distill/website.html}{getting started notes from the distill team}!
+\item
+  \href{https://blog.rstudio.com/2020/12/07/distill/}{This blog post from the RStudio team} is a great feature summary for the \texttt{distill} package.
+\item
+  Explore the \href{https://distillery.rbind.io/showcase.html}{Distillery Showcase} of websites made with Distill! Some great inspiration here.
 \end{itemize}
 
 \hypertarget{setting-up-a-custom-domain}{%
@@ -338,10 +482,7 @@ I made the ISSC a landing page. You can view it at \url{https://uoft-doss-issc.g
 
 It can take a while (like, a day or so) to update the redirection between your GitHub page and your domain, so be prepared to be patient!
 
-These instructions are quite good:
-\url{https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/}
-
-If you're using \href{https://domain.com}{domain.com}
+These instructions are quite good: \url{https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/}
 
 \hypertarget{post-workshop-tasks}{%
 \subsection{Post-workshop tasks}\label{post-workshop-tasks}}
@@ -349,9 +490,19 @@ If you're using \href{https://domain.com}{domain.com}
 \begin{itemize}
 \tightlist
 \item
-  Check-in with yourself:
+  Check-in with yourself: What was fun about today? What did you learn? What did you find challenging? Did anything make you want to give up? If so, was why should you keep going with your website?
 \item
-  What is
+  Fill out this \href{https://forms.office.com/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOKHUU3SzAJJhmOKjJhDWEpUQUJETTYxTkhUVUlQU0VUOEFFMlBWTjA2Vy4u}{short `ticket out the door' survey.}
+\item
+  Do a social media audit. What are you happy with being public and what is private to close friends/family, etc.
+\item
+  Continue to update your bio, links.
+\item
+  Make a site plan. What other pages would you like to add? Maybe a testimonials page?
+\item
+  Start thinking about what colours you like and/or what colours would help communicate your personality. Currently your site will have a blue navigation bar, but we will learn some basic ways to change the look and feel in our next session.
+\item
+  Add your website URL to your email signature, once you feel it is in an okay state of readiness. We're also going to add more to it over the next few sessions so feel free to wait, too.
 \end{itemize}
 
 \hypertarget{session-2-blogging-with-distill}{%
@@ -373,8 +524,8 @@ If you're using \href{https://domain.com}{domain.com}
 
 You \textbf{do not have to buy anything} to build and host a professional personal website as a student. BUT, if you've always wanted to own www.firstnamelastname.com, here are some instructions. Note, if you're not sure what a domain name is there are heaps of explainer articles online, just search ``what is a domain name''. You don't really need to know too much.
 
-\hypertarget{some-caveats-before-we-continue}{%
-\subsubsection{Some caveats before we continue}\label{some-caveats-before-we-continue}}
+\hypertarget{some-caveats}{%
+\subsubsection{Some caveats}\label{some-caveats}}
 
 \begin{itemize}
 \tightlist
@@ -383,6 +534,11 @@ You \textbf{do not have to buy anything} to build and host a professional person
 \item
   This isn't legal or financial advice. Duh.
 \end{itemize}
+
+\hypertarget{dont-pay-full-price}{%
+\subsubsection{Don't pay full price!}\label{dont-pay-full-price}}
+
+There is almost always a deal going on. May not still be live when you're looking, but `nameboy' was a code for 25\% of domains.com when I was setting up mine.
 
 \hypertarget{but-what-if-you-dont-buy-a-domain-name}{%
 \subsection{But what if you don't buy a domain name?}\label{but-what-if-you-dont-buy-a-domain-name}}
